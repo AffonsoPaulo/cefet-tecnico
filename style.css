@@ -1,0 +1,9 @@
+body {
+    background-color: gray;
+}
+
+#image {
+    width: 25%;
+    border-radius: 50%;
+    margin: 15%;
+}
