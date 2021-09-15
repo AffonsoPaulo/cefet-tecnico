@@ -1,9 +1,46 @@
 body {
-    background-color: gray;
+    background-color: #292929;
 }
 
 #image {
+    float: left;
     width: 25%;
     border-radius: 50%;
-    margin: 15%;
+    margin-right: 15px;
+}
+
+#text {
+    width: 960px;
+    margin: 15% auto;
+
+}
+#text h1 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    font-weight: 900;
+    font-size: xxx-large;
+    margin-bottom: 25px;
+    color: white;
+}
+
+#text p {
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    font-weight: bolder;
+    font-size: large;
+    margin-bottom: 8px; 
+    color: white; 
+}
+
+a:link {
+    text-decoration: none;
+    color: #cccccc;
+}
+
+a:visited {
+    color: #cccccc;
+}
+
+a:hover {
+    color: black;
 }
