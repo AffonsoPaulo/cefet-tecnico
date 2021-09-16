@@ -12,15 +12,31 @@ body {
 #text {
     width: 960px;
     margin: 15% auto;
+    margin-left: 27%;
 
 }
-#text h1 {
+
+
+h1 {
     font-family: 'Quicksand', sans-serif;
     text-align: left;
     font-weight: 900;
     font-size: xxx-large;
     margin-bottom: 25px;
     color: white;
+}
+
+header h1 {
+    float: left;
+    margin-left: 25px;
+    margin-top: 18px;
+}
+
+#teste1 {
+    float: right;
+    font-size: medium;
+    margin-top: 36px;
+    margin-right: 25px;
 }
 
 #text p {
@@ -30,6 +46,30 @@ body {
     font-size: large;
     margin-bottom: 8px; 
     color: white; 
+}
+main {
+    clear: left;
+}
+#aulas h1 {
+    text-align: center;
+}
+
+#aulas {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+#aulas li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 20px 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 15px;
 }
 
 a:link {
