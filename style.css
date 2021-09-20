@@ -57,7 +57,7 @@ main {
 #aulas {
 	width: 940px;
 	margin: 0 auto;
-	padding: 50px 0;
+	padding-top: 50px;
 }
 
 #aulas li {
@@ -70,6 +70,26 @@ main {
 	box-sizing: border-box;
 	border: 2px solid #000000;
 	border-radius: 15px;
+}
+
+#aulas2 h1 {
+    text-align: center;    
+}
+#aulas2 {
+	width: 940px;
+	margin: 0 auto;
+	padding-top: 1.5%;
+}
+#aulas2 li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 20px 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 15px;    
 }
 
 a:link {
