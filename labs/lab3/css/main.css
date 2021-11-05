@@ -1,0 +1,204 @@
+/*
+laranja: rgb(246,94,0);
+cinza-azulado: rgb(13,31,41);
+azul-escuro: rgb(1, 17, 23);
+*/
+
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing:border-box;
+}
+html {
+    margin:0;
+}
+h2 {
+    display: block;
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h3 {
+    display: block;
+    font-size: 1.05em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+.top mark {
+    color: rgb(246,94,0);
+    text-transform: lowercase;
+    background-color: rgb(255,255,255);
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+}
+
+section, .divisoria nav {
+    width:900px;
+    margin: auto;
+}
+
+.top figure {
+    position:relative;
+    width: 500px;
+    margin: 0px 0px 0px 8em;
+}
+.top img {
+    width: 70%;
+}
+
+.top article {
+    width: 300px;  
+}
+
+.top figcaption {
+    position: absolute;
+    top: 0;
+    left: 175px;
+    background: rgb(13,31,41);
+    color: rgb(246,94,0);
+    padding: 5px;
+    font-size: 0.7em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.phone {
+    color: #fff;    
+}
+.divisoria {
+    width: 100%;
+    background: rgb(13,31,41);
+}
+
+.divisoria ul {
+    display: flex;
+    flex-direction:row;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    justify-content: space-between;
+}
+.divisoria li {
+    padding:10px 20px; 
+}
+.divisoria li:first-child, .divisoria li:hover {
+    background-color: rgb(246,94,0);
+}
+
+.divisoria a {
+    text-decoration: none;  
+    color: #fff;
+}
+
+.box {
+    width: 275px;
+    float: left;
+    margin: 25px 25px 25px 0px;
+    border: 4px solid lightgray;
+    border-radius: 15px;
+}
+
+.box section {
+    float: left;
+}
+.box figure {
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.box figcaption {
+    position:absolute;
+    bottom: -7px;
+    width:100%;
+    padding:5px 5px 15px;
+    text-align: center;
+    background: rgba(0,0,0,0.9); 
+    color: #fff;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 55% 75%, 50% 100%, 45% 75%, 0% 75%);
+}
+
+.box img {
+    width:inherit;
+    border-radius: 10px;
+}
+
+.box p {
+    font-size:0.95em;
+    padding: 0 8px 0 8px;   
+}
+
+.box button {
+    float: right;
+    margin: 5px 5px 5px 0;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    border-color: orange;
+}
+
+footer {
+    clear: left;
+    margin: auto;
+    width: 100%;
+    height: 350px;
+    background-color: rgb(13,31,41);
+    color: white;
+}
+footer section {
+    background-color: rgb(1, 17, 23);
+}
+
+.boxle {
+    width: 50%;
+    float: left;
+    margin: 25px 25px 25px 0px;
+    border-right: 2px solid black;
+}
+
+.boxri {
+    width: 40%;
+    float: right;
+    margin: 25px 25px 25px 0px;
+}
+.boxri table, tr, td {
+    background-color: rgb(1, 17, 23);
+    border-radius: 8px;
+    padding: 5px;
+}
+input, textarea{
+    margin: 5px 0 5px 0;
+    width: 85%;
+    border-radius: 5px;
+    background-color: rgb(1, 17, 23);
+}
+::placeholder {
+    color: gray;
+}
+.submit {
+    margin-left: 270px;
+    width: 25%;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    border-color: orange;
+}
+/* .vl {
+    border-left: 6px solid rgb(1, 17, 23);
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: 900px;
+    top: 0;
+} */
