@@ -1,0 +1,128 @@
+.banner {
+    position: relative;
+}
+.banner figcaption {
+    position: absolute;
+    top: 35%;
+    left: 36%;
+    text-align: center;
+}
+.banner button {
+    margin-top: 10%;
+    padding: 2%;
+    border: 2px solid #ffffff;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #fff;
+}
+.banner h1, p {
+    font-size: 5em;
+    font-weight: bolder;
+    color: white;
+}
+.banner p {
+    color: gray;
+}
+.banner img {
+    width: 100%;
+}
+.bodyarea {
+    margin: 3%;
+    display: flex;
+}
+.bodyarea h1 {
+    font-size: 2em;
+    font-weight: bolder;
+}
+.principal {
+    width: 85%;
+}
+.principal p {
+    color: black;
+    width: 95%;
+    font-size: 135%;
+    word-spacing: 0.1em;
+}
+.principal img {
+    margin: 2% 0 2% 0;
+    width: 95%;
+}
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 10%;
+}
+.data {
+    color: #636363;
+    display: block;
+    font-size: small;
+    margin: 8% 0 8% 0;
+}
+
+.sidebar p {
+    color: black;
+}
+.sidebar {
+    display: inline;
+}
+.sbcontent {
+    border-bottom: 0.1em solid gray;
+    padding-bottom: 5%;
+}
+.sideb {
+    display: flex;
+}
+.sideb p {
+    margin: 5% 0 3% 3%;
+}
+.middle {
+    display: flex;
+    background-color: #f3f3f2;
+    justify-content: space-between;
+}
+.middlediv {
+    margin: 0 0 0 3%;
+}
+.middlediv:last-child {
+    margin: 0 3% 0 0;
+}
+.middlediv button {
+    margin: 2% 0 5% 0;
+    padding: 2%;
+    border: 2px solid #ffffff;
+    border-radius: 3em;
+    background-color: orangered;
+    color: white;
+}
+.middle img {
+    width: 100%;
+}
+.middle h2 {
+    margin: 13% 0 7% 0;
+    font-size: large;
+    font-weight: bolder;
+}
+.middle p {
+    color: black;
+    margin: 5% 0 5% 0;;
+}
+footer {
+    background-color: #1c1c1c;
+}
+.footerdiv {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3% 0 3%;
+}
+.footerbar p:last-child {
+    margin: 0 0 15% 0;
+}
+footer h2 {
+    margin: 13% 0 8% 0;
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+}
+footer hr {
+    width: 100%;
+    margin: 3% 0 3% 0;
+}

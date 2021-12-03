@@ -1,0 +1,38 @@
+body {
+    background-color: #f4f4f4;
+}
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 0 15px 0;
+    background-color: white;
+    border: 1px solid gray;
+}
+.navbar li:first-child {
+    padding: 0 35px 0 35px;
+    font-weight: bold;
+}
+.navbar li {
+    padding: 0 15px 0 15px;
+    border-left: 1px solid gray;
+}
+.principal {
+    background-color: white;
+    display: flex;
+    margin-top: 5%;
+}
+.prtitle {
+    display: flex;
+    border: 0.5px solid gray;
+}
+.title {
+    display: flex;
+}
+.data {
+    display: flex;
+    border: 0.5px solid gray;
+}
+.data img {
+    height: 1.5%;
+    border-radius: 100%;
+}
