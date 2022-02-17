@@ -1,0 +1,54 @@
+.img {
+    box-shadow: 0 0 1em black;
+}
+
+.btn-primary {
+    background-color: var(--laranja);
+    border-color: var(--laranja);
+}
+
+main .text-center a {
+    color: white;
+}
+
+section button {
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.texto {
+    margin: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: x-large;
+}
+
+.one, .two {
+    border-bottom: 5px dashed var(--laranja);
+}
+
+.título {
+    margin: 20px 15px 0 15px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: xx-large;
+}
+
+.subtítulo {
+    margin: 20px 15px 0 15px;
+    color: #e82189;
+    text-shadow: 2px 2px 2px #300820;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.footer {
+    margin: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: larger;
+    border-top: ;
+}
+.padding {
+    padding: 15px;
+}

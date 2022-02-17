@@ -1,0 +1,37 @@
+:root {
+    --laranja: #c28e2b;
+}
+body {
+    background-color: white;
+}
+
+header img {
+    width: 20em;
+    filter: invert(54%) sepia(54%) saturate(565%) hue-rotate(1deg) brightness(96%) contrast(91%)
+}
+
+header section {
+    text-align: center;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #292929;
+}
+
+header {
+    border-bottom: 5px dashed var(--laranja);
+}
+
+header a {
+    color: white;
+}
+
+nav {
+    padding-bottom: 15px;
+}
+
+.nav-pills .nav-link.active {
+    color: white;
+    background-color: var(--laranja);
+}
