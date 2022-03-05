@@ -1,0 +1,41 @@
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+    background-image: url(../img/vitrine.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.form-control {
+    width: 80%;
+    display: inline-block;
+}
+
+.hall {
+    background-color: rgb(45, 52, 57);
+    color: white;
+}
+
+.hall h1 {
+    margin-top: 30px;
+}
+
+.hall button {
+    margin-bottom: 20px;
+}
+
+.review img {
+    float: left;
+    margin-right: 10px;
+}
+
+.review h3 {
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.review p {
+    font-size: 0.7rem;
+}
