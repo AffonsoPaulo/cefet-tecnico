@@ -1,10 +1,19 @@
 :root {
     --laranja: #c28e2b;
+    --laranjahover: #FA8072;
 }
 body {
     background-color: white;
 }
 
+main {
+    margin: 1rem;
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
 header img {
     width: 20em;
     filter: invert(54%) sepia(54%) saturate(565%) hue-rotate(1deg) brightness(96%) contrast(91%)
@@ -27,11 +36,60 @@ header a {
     color: white;
 }
 
-nav {
-    padding-bottom: 15px;
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 15px 0;
 }
 
-.nav-pills .nav-link.active {
+.itens {
+    color: var(--laranja);
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: 900;
+}
+
+.footer {
+    margin: 20px;
     color: white;
-    background-color: var(--laranja);
+    text-shadow: 1px 1px 2px black;
+    font-size: larger;
+}
+.itens:hover {
+    color: var(--laranjahover);
+}
+
+.título {
+    margin: 20px 15px 0 15px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.texto {
+    margin: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: x-large;
+}
+
+@media(max-width: 320px) {
+    header img {
+        width: 15em;
+    }
+    
+    .texto {
+        font-size: large;
+    }
+
+    .título, .subtítulo {
+        font-size: x-large;
+    }
+
+    .footer {
+        font-size: large;
+    }
 }

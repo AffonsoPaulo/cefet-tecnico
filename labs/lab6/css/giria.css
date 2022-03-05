@@ -1,0 +1,12 @@
+.table {
+    margin: 0 auto;
+}
+
+.principal {
+    border-bottom: 5px dashed var(--laranja);
+}
+
+.girias {
+    margin-bottom: 20px;
+    border-bottom: 5px dashed var(--laranja);
+}

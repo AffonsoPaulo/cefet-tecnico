@@ -1,39 +1,34 @@
 .img {
     box-shadow: 0 0 1em black;
+    width: 100%;
+    height: 100%;
 }
 
-.btn-primary {
-    background-color: var(--laranja);
-    border-color: var(--laranja);
-}
-
-main .text-center a {
+.button a, .button a p {
+    display: inline;
     color: white;
+    text-decoration: none;
 }
-
+.button a p {
+    margin-left: 0.5rem;
+    font-weight: 300;
+}
 section button {
     margin-bottom: 25px;
     margin-top: 15px;
-}
-
-.texto {
-    margin: 20px;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-    font-size: x-large;
+    background: var(--laranja);
+    border-radius: 0.5rem;
+    width: 15rem;
+    height: 2.5rem;
 }
 
 .one, .two {
     border-bottom: 5px dashed var(--laranja);
 }
 
-.título {
-    margin: 20px 15px 0 15px;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-    font-size: xx-large;
+.two .img {
+    margin-top: 10px;
 }
-
 .subtítulo {
     margin: 20px 15px 0 15px;
     color: #e82189;
@@ -42,13 +37,6 @@ section button {
     font-size: xx-large;
 }
 
-.footer {
-    margin: 20px;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-    font-size: larger;
-    border-top: ;
-}
 .padding {
     padding: 15px;
 }
