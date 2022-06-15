@@ -9,7 +9,7 @@ const verifyNumber = (number) => {
     }
 }
 
-for(let aux = 2; aux < 100; aux++) {
+for(let aux = 2; aux < 1000; aux++) {
     if (verifyNumber(aux)) {
         const createP = document.createElement("p")
         const resultPrint = document.createTextNode(parseFloat(aux))
