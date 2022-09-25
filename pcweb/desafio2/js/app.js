@@ -10,8 +10,4 @@ update.addEventListener("click", () => {
         penultimo = ultimo;
         ultimo = numero;
     }
-    const createP = document.createElement("p")
-    const resultPrint = document.createTextNode(numero)
-    createP.appendChild(resultPrint)
-    main.appendChild(createP)
 })
