@@ -5,7 +5,7 @@
 // classificação
 // figura [V]
 // elenco [V]
-// opiniões {rating, descricao}
+// opiniões {rating, descricao} <i class="fa-solid fa-star"></i> [V]
 // 
 
 let xhttp = new XMLHttpRequest();
@@ -16,27 +16,31 @@ let criaGenero = filme => filme.generos.reduce((elementos, item) => elementos + 
 
 let criaElenco = filme => filme.elenco.reduce((elementos, item) => elementos + `<li>${item}</li>`, "")
 
-let procuraTitulo = (id, arrayCompleto) => {
-    console.log(id)
-    console.log(arrayCompleto.id + ` é do array`)
+let rating = filme => {
+    switch (filme) {
+        case 5:
+            return `<i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i>`
+            break;
+        case 4:
+            return `<i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i>`
+        case 3:
+            return `<i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i>`
+        case 2:
+            return `<i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i>`
+        case 1:
+            return `<i class="fa-solid fa-star yellow"></i>`
+        default:
+            return filme
+            break;
+    }
 }
 
-let criaTitulos = filmes => {
-    console.log(Object.keys(filmes).lenght)
-    for (let i = 0; i <= filmes.titulosSemelhantes.length; i++) {
-        console.log("oi")
-        for (let j = 0; j <= filmes.length; j++) {
-            console.log("oi")
-        }
-    }
-    // console.log(titulos)
-    // console.log(titulos)
-    // return titulos.reduce((elementos, item) => elementos + `<li>${procuraTitulo(item, filmes)}</li>`, "")
+let criaOpiniao = filme => {
+    return filme.opinioes.reduce((elementos, item) => {
+        return elementos + `<li>${rating(item.rating)}</li><li>${item.descricao}</li>`}, "")
 }
-/* let criaTitulos = titulos => titulos.reduce((elementos, item) => elementos + `<li>${item}</li>`, "") */
 
 let criaApresentacao = (filme) => {
-    console.log(filme)
     return `
     <div class="filme">
         <img src="${filme.figura}" alt="${filme.titulo}">
@@ -53,8 +57,9 @@ let criaApresentacao = (filme) => {
             </ul>
         </div>
         <div class="titulos semelhantes">
-                ${criaTitulos(filme)}
+                ${criaOpiniao(filme)}
         </div>
+        
     </div>`
 }
 
@@ -64,6 +69,7 @@ xhttp.onreadystatechange = function() {
         // console.log(filmes)
         let secao = document.querySelector(".filmes")
         filmes.forEach(filmes => {
+            // console.log(filmes)
             secao.innerHTML += criaApresentacao(filmes)
         })
     }
