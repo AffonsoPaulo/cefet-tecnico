@@ -22,31 +22,40 @@ let rating = filme => {
             return `<i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i>`
             break;
         case 4:
-            return `<i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i>`
+            return `<i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star"></i>`
         case 3:
-            return `<i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i>`
+            return `<i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>`
         case 2:
-            return `<i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i>`
+            return `<i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>`
         case 1:
-            return `<i class="fa-solid fa-star yellow"></i>`
+            return `<i class="fa-solid fa-star yellow"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>`
         default:
             return filme
             break;
     }
 }
 
-let criaOpiniao = filme => {
-    return filme.opinioes.reduce((elementos, item) => {
-        return elementos + `<div class="ratingBox"><li class="listaRating">${item.descricao}</li><li class="listaRating">${rating(item.rating)}</li> </div>`}, "")
+let criaIndica = filme => {
+    if(filme <= 14)
+    return `<span><p class="indica green">${filme}</p></span>`
+    if(filme > 14 && filme < 18)
+    return `<span><p class="indica yellow">${filme}</p></span>`
+    if(filme >= 18)
+    return `<span><p class="indica red">${filme}</p></span>`
 }
+
+let criaOpiniao = filme => filme.opinioes.reduce((elementos, item) => elementos + `<div class="ratingBox"><li class="listaRating"><q>${item.descricao}</q></li><li class="listaRating">${rating(item.rating)}</li> </div>`, "")
 
 let criaApresentacao = (filme) => {
     return `
     <div class="filme">
         <img class="img" src="${filme.figura}" alt="${filme.titulo}">
         <div>
-            <h2>${filme.titulo}</h2>
-            <p class="descricao">${filme.resumo}</p>
+            <div class="tituloIndica">
+                <h2>${filme.titulo}</h2>
+                ${criaIndica(filme.classificacao)}
+            </div>
+                <p class="descricao">${filme.resumo}</p>
             <div class="genero">
                 <p class="name">Gêneros: </p>
                 <ul>
