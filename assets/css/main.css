@@ -1,0 +1,73 @@
+body {
+    padding: 0 12.5rem;
+    background-color: var(--background);
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--titleColor);
+}
+
+
+li {
+    font-weight: 500;
+    font-size: 1.5rem;
+    list-style: none;
+    display: inline;
+    padding-left: 1rem;
+    color: var(--titleColor);
+}
+
+li:first-child {
+    padding-left: 0;
+}
+
+img {
+    width: 20rem;
+    height: auto;
+    border-radius: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3.25rem 0 3.25rem 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section li {
+    color: var(--textColor);
+}
+
+section ul, section li {
+    padding: 0;
+    display: inline-block;
+}
+
+.infos {
+    margin-left: 3rem;
+}
+
+a:hover {
+    color: var(--hoverColor);
+    transition: color 1s;   
+}
+
+p {
+    color: var(--textColor);
+}
+
+footer {
+    margin-top: 6.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
