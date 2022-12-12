@@ -57,3 +57,10 @@ verificarMedidas.addEventListener("click", () => {
 
 // Número 3
 
+fetch('https://api.currencyapi.com/v3/latest', {
+    method: 'GET',
+    headers: {
+        
+    }
+}
+)
