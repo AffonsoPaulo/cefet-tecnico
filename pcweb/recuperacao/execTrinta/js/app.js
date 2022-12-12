@@ -4,8 +4,6 @@ const pesquisa = () => {
     const palavrasPesquisa = document.querySelector("#pesquisar").value
     let texto = document.querySelector(".frase").textContent
     const teste = document.querySelector(".teste")
-    texto = texto.replaceAll(palavrasPesquisa, `<mark>${palavrasPesquisa}</mark>`)
-    if(palavrasPesquisa !== palavrasPesquisa.toLowerCase())
     texto = texto.replaceAll(palavrasPesquisa.toLowerCase(), `<mark>${palavrasPesquisa.toLowerCase()}</mark>`)
     teste.innerHTML = texto
     let aux = []
