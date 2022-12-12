@@ -1,6 +1,7 @@
 const button = document.querySelector("button")
 const number = parseInt(document.querySelector(".valor").value)
 const quantity = parseInt(document.querySelector(".quantidade").value)
+const resp = document.querySelector(".resposta")
 button.addEventListener("click", () => {
     let numero, penultimo = 0, ultimo = number
     const resp = document.querySelector(".resposta")

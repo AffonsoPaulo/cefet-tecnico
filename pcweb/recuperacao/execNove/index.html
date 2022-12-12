@@ -8,24 +8,50 @@
     <script src="js/app.js" defer></script>
     <title>Exercício Nove</title>
     <style>
-        .buttons {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .quadrado {
+        .viewOne>button,
+        .viewTwo>button,
+        .viewThree>button {
             width: 100px;
             height: 100px;
-            background-color: red;
             margin: 5px;
+        }
+
+        .game {
+            text-align: center;
+        }
+
+        .stats {
+            text-align: center;
+        }
+
+        .none {
+            display: none;
         }
     </style>
 </head>
 
 <body>
-    <button class="criaBotao">Criar botão</button>
-        <section class="buttons">
-                
+        <div class="stats">
+            <button class="start">Iniciar</button>
+            <p class="none">Quem irá jogar agora:</p>
+            <p class="player"></p>
+        </div>
+        <section class="game">
+            <div class="viewOne">
+                <button class="1">&nbsp;</button>
+                <button class="2">&nbsp;</button>
+                <button class="3">&nbsp;</button>
+            </div>
+            <div class="viewTwo">
+                <button class="4">&nbsp;</button>
+                <button class="5">&nbsp;</button>
+                <button class="6">&nbsp;</button>
+            </div>
+            <div class="viewThree">
+                <button class="7">&nbsp;</button>
+                <button class="8">&nbsp;</button>
+                <button class="9">&nbsp;</button>
+            </div>
         </section>
 </body>
 
