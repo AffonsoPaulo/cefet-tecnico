@@ -16,7 +16,6 @@ start.addEventListener("click", () => {
 })
 
 game.addEventListener("click", (event) => {
-    console.log(event.target)
     if (player == null) {
         window.alert("Você ainda não iniciou o jogo")
         return null
@@ -37,7 +36,6 @@ game.addEventListener("click", (event) => {
             playerNow.innerHTML = player
         }
     }
-    console.log(playerX)
     if (moves >= 5) {
         let aux = 0
         for (let i = 0; i <= 7; i++) {

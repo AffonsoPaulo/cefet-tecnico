@@ -1,8 +1,7 @@
 const button = document.querySelector("button")
-const quantity = parseInt(document.querySelector(".quantidade").value)
 button.addEventListener("click", () => {
     const array = document.querySelector(".array")
-    console.log("Cheguei aqui")
+    const quantity = parseInt(document.querySelector(".quantidade").value)
     for(let i = 1; i <= quantity; i++) {
         array.innerHTML += `<p>Insira os dados do Array ${i}</p><input type="text" class="array${i}">`
     }
