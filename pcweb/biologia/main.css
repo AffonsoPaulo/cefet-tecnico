@@ -8,9 +8,37 @@ body {
     body {
         margin: 25px 100px;
     }
+
     .imagemTexto {
         justify-content: center;
         flex-wrap: wrap;
+    }
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 860px) {
+    body {
+        margin: 0;
+    }
+
+    .mobile {
+        display: block;
+        height: 100vh;
+        background-color: red;
+
+    }
+
+    .mobile > p {
+    padding: 25% 5%;
+    }
+
+    .resumo,
+    .quizGame,
+    .ref {
+        display: none;
     }
 }
 
