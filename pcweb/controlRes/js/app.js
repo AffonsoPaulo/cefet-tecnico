@@ -113,7 +113,7 @@ const checkout = document.querySelector(".cartCheckout")
 
 checkout.addEventListener("click", () => {
     checkout.remove()
-    let aux = 15
+    let aux = 300
     let interval = setInterval(() => {
         aux > 60 ? document.querySelector(".checkoutMessage").textContent = `Você tem ${(aux/60).toFixed()} minutos para remover os itens do seu pedido.` : document.querySelector(".checkoutMessage").textContent = `Você tem ${aux} segundos para remover os itens do seu pedido.`
         aux--
