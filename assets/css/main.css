@@ -46,7 +46,7 @@ nav {
 section {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 section li {
@@ -82,5 +82,40 @@ footer {
 @media only screen and (max-width: 1100px) {
     body {
         padding: 0 15%;
+    }
+    section {
+        flex-wrap: wrap;
+    }
+    nav {
+        justify-content: center;
+    }
+    .infos {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 937px) {
+    body {
+        padding: 0 10%;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        padding: 0;
+        font-size: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    nav ul li {
+        padding: 0px;
+    }
+    section {
+        flex-wrap: wrap;
+    }
+    footer p {
+        text-align: center;
     }
 }
