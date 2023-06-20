@@ -1,5 +1,5 @@
 window.onload = () => {
-    fetch('https://pauloaffonso.com.br/pcweb/controlRes/items.json')
+    fetch('https://affonso.dev/pcweb/controlRes/items.json')
         .then(response => response.json())
         .then(responseJSON => {
             responseJSON.forEach((item) => {
